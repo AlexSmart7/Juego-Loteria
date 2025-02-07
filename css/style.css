@@ -1,0 +1,115 @@
+[class*="col"] {
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+    body{
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .principal{
+        width: 100%;
+        height: 100px;
+        display: flex;
+    }
+
+    p{
+        text-align: center;
+        background-color: black;
+        color: greenyellow;
+        font-size: 13px;
+    }
+
+    #inicio{
+        width: 200px;
+        height: 200px;
+    }
+    .red {
+        background-color: red;
+        border: 3px solid black; 
+    }
+    .blue {
+        background-color: blue;
+        border: 3px solid black;
+    }
+    .green {
+        background-color:green;
+        border: 3px solid black;
+    }
+
+    .espacio{
+        border: 5px solid black;
+        margin: auto;
+    }
+
+    .gray {
+        background-color: gray;
+    }
+
+    .black {
+        background-color: black;
+    }
+
+    
+    .alto {
+        height: 120px;
+    }
+
+    .img_tab {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carta_tab {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .titulos{
+        text-align: center;
+        align-items: center;
+        color: white;
+    }
+
+    .msj {
+        display: none;
+    }
+    
+    .verMensaje {
+        display: block;
+        text-align: center;
+    }
+    
+    .altoCarta {
+        width: 200px;
+        height: 250px;
+        padding: 20px;
+        margin: 20px;
+        
+    }
+
+    .bannerOculto{
+        display: none;
+    }
+
+    .bannerPrincipal {
+        display: block;
+    }
+
+    .cartas {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        padding: 50px;
+    }   
+
+    .margen {
+        margin: 20px;
+    }
+
+    .ok {
+        filter: grayscale(100%);
+    }
