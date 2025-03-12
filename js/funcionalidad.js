@@ -10,6 +10,15 @@ function mostrarTableros(){
 
     let ini = document.getElementById("inicio");
     ini.className = "container-fluid msj"
+
+    const title = document.getElementById("titulo");
+    title.className = "bannerOculto"
+
+    const head = document.getElementById("cabeza");
+    head.className = "bannerOculto"
+
+    const res = document.getElementById("reseña");
+    res.className = "bannerOculto"
 }
 
 //     // Se generan los tableros aleatoriamente
@@ -154,6 +163,7 @@ function crearTableros(limInferior, LimSuperior){
     const msj = document.getElementById("Mensaje");
     msj.className = "verMensaje"
 
+    
     let selTab1 = document.getElementById("tab1");
     selTab1.className = "col-md-4 col-sm-4 red espacio btn btn-warning"
 
@@ -191,11 +201,6 @@ function selecTablero1() {
     const msj = document.getElementById("Mensaje");
     msj.className = "bannerOculto"
 
-    const title = document.getElementById("titulo");
-    title.className = "bannerOculto"
-
-    const res = document.getElementById("reseña");
-    res.className = "bannerOculto"
 
     let miTab_1 = document.getElementById("miTab_1");
     miTab_1.src=`img/Cartas lotería/${Tablero1[0]}.jpg`;
@@ -247,11 +252,6 @@ function selecTablero2() {
     const msj = document.getElementById("Mensaje");
     msj.className = "bannerOculto"
 
-    const title = document.getElementById("titulo");
-    title.className = "bannerOculto"
-
-    const res = document.getElementById("reseña");
-    res.className = "bannerOculto"
 
     let miTab_1 = document.getElementById("miTab_1");
     miTab_1.src=`img/Cartas lotería/${Tablero2[0]}.jpg`
@@ -302,12 +302,6 @@ function selecTablero3() {
 
     const msj = document.getElementById("Mensaje");
     msj.className = "bannerOculto"
-
-    const title = document.getElementById("titulo");
-    title.className = "bannerOculto"
-
-    const res = document.getElementById("reseña");
-    res.className = "bannerOculto"
 
     let miTab_1 = document.getElementById("miTab_1");
     miTab_1.src=`img/Cartas lotería/${Tablero3[0]}.jpg`
@@ -369,7 +363,13 @@ function barajearMazo(limInferior, LimSuperior){
     let inhabil = document.getElementById("barajear");
     inhabil.className = "margen btn btn-secondary btn-lg disabled"
 
-    alert("Cartas Barajeadas, Listos para iniciar")
+    swal({
+        title: "Listo",
+        text: "Cartas Barajeadas, Listos para iniciar",
+        timer: 3000,
+        icon: "success",
+    });
+    //alert("Cartas Barajeadas, Listos para iniciar")
 }
 
 //     // comienza a lanzar las cartas cada 3 segundos aprox.
@@ -378,7 +378,13 @@ var jugadorPC = ''
 
 function playMachine(){
     console.log(jugadorPC)
-    alert("Lista PC para iniciar la partida")
+    swal({
+        title: "Activada",
+        text: "PC lista para iniciar la partida",
+        timer: 3000,
+        icon: "info",
+    });
+    //alert("Lista PC para iniciar la partida")
     jugadorPC = 'Machine'
     console.log(jugadorPC)
 }
@@ -389,7 +395,7 @@ var x = 0;
 var y = 0;
 
 function iniciarJuego(){
-    interval = setInterval(temporizador, 2300); 
+    interval = setInterval(temporizador, 3000); 
     
 }
     
@@ -444,7 +450,12 @@ function val1(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -459,7 +470,12 @@ function val2(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -474,7 +490,12 @@ function val3(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -489,7 +510,12 @@ function val4(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -504,7 +530,12 @@ function val5(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -518,7 +549,12 @@ function val6(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -533,7 +569,12 @@ function val7(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -547,7 +588,12 @@ function val8(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });            
             clearInterval(interval);
         }
     }    
@@ -561,7 +607,12 @@ function val9(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -576,7 +627,12 @@ function val10(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -591,7 +647,12 @@ function val11(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -606,7 +667,12 @@ function val12(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -621,7 +687,12 @@ function val13(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -636,7 +707,12 @@ function val14(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -650,7 +726,12 @@ function val15(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -664,7 +745,12 @@ function val16(){
         ok.className = "img-fluid img_tab ok";
         contador.push(1)
         if(contador.length === 16){
-            alert("LOTERIA, Ganador jugador 1")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 1",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -734,7 +820,12 @@ function validacionpc(){
             okpc.className = "img-fluid img_tab ok";
             contador2.push(1)
             if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador PC",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval)
             jugadorPC = ''
             }
@@ -750,7 +841,12 @@ function vall1(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -764,7 +860,12 @@ function vall2(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -778,7 +879,12 @@ function vall3(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -792,7 +898,12 @@ function vall4(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -806,7 +917,12 @@ function vall5(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -820,7 +936,12 @@ function vall6(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -834,7 +955,12 @@ function vall7(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -848,7 +974,12 @@ function vall8(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -862,7 +993,12 @@ function vall9(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -876,7 +1012,12 @@ function vall10(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -890,7 +1031,12 @@ function vall11(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -904,7 +1050,12 @@ function vall12(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -918,7 +1069,12 @@ function vall13(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -932,7 +1088,12 @@ function vall14(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -946,7 +1107,12 @@ function vall15(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    
@@ -960,7 +1126,12 @@ function vall16(){
         ok2.className = "img-fluid img_tab ok";
         contador2.push(1)
         if(contador2.length === 16){
-            alert("LOTERIA, Ganador jugador 2")
+            swal({
+                title: "LOTERIA",
+                text: "Ganador jugador 2",
+                timer: 3000,
+                icon: "success",
+            });
             clearInterval(interval);
         }
     }    

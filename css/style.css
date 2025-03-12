@@ -13,7 +13,9 @@
     .principal{
         width: 100%;
         height: 100px;
-        display: flex;
+        display: flex ;
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center;    /* Centrar verticalmente */
     }
 
     p{
@@ -21,12 +23,80 @@
         background-color: black;
         color: greenyellow;
         font-size: 13px;
+
     }
 
-    #inicio{
+    
+    #inicio {
         width: 200px;
-        height: 200px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #f8f9fa;
     }
+
+    
+
+    .container-fluid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #f8f9fa;
+    }
+
+    /* Estilo del botón */
+    .msj {
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #btn1 {
+        margin-top: 20px;
+        padding: 12px 24px;
+        font-size: 18px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    #btn1:hover {
+        background-color: #343a40;
+        transform: scale(1.05);
+    }
+
+    /* Estilos responsivos */
+
+    @media (max-width: 768px) {
+        .col-sm-4 {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        #btn1 {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+        .msj {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #btn1 {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+        .msj {
+            font-size: 14px;
+        }
+    }
+
+
+
+
     .red {
         background-color: red;
         border: 3px solid black; 
@@ -61,16 +131,31 @@
     .img_tab {
         width: 100%;
         height: 100%;
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     .carta_tab {
-        padding: 0;
-        margin: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+        margin: 0px;
     }
     
-    .titulos{
+    .carta_tab img {
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .carta_tab img:hover {
+        transform: scale(1.1);
+    }
+
+    .titulos {
         text-align: center;
-        align-items: center;
+        font-weight: bold;
+        margin-bottom: 15px;
         color: white;
     }
 
@@ -113,3 +198,16 @@
     .ok {
         filter: grayscale(100%);
     }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .btn-dark {
+        min-width: 80px;
+        max-width: 95%;
+        font-size: 14px;  /* Reduce el tamaño del texto */
+        padding: 5px 10px; /* Ajusta el padding */
+        
+      }
+
